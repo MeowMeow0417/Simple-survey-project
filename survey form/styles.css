@@ -1,0 +1,109 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+h1#title {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+p#description {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+form#survey-form {
+    background: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    margin: 0 20px; /* Add margin for small screen padding */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="name"],
+input[type="email"],
+input[type="number"],
+textarea, 
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+legend {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+button#submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%; /* Ensure button doesn't stretch */
+    max-width: 200px; /* Set a maximum width for the button */
+    margin: 0 auto; /* Center the button */
+    display: block; /* Center the button */
+}
+
+button#submit:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+    form#survey-form {
+        padding: 20px;
+    }
+
+    h1#title {
+        font-size: 2em;
+    }
+
+    p#description {
+        font-size: 1em;
+    }
+}
